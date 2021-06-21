@@ -36,6 +36,7 @@
     border-botton: 1px solid black;
     border-top: 1px solid rgba(255,255,255,.1);
     border-left: 5px solid transparent;
+    font-family: 'Open Sans', sans-serif;
     transition: all .5s ease;
 }
 
@@ -55,10 +56,10 @@ a.active,a:hover{
 }
 
 #check{
-    display none;
+    display: none;
 }
 
-label #btn, label #cancel{
+label #btn,label #cancel{
     position: absolute;
     cursor: pointer;
     color: white;
@@ -68,12 +69,13 @@ label #btn, label #cancel{
     font-size: 28px;
     background: #262626;
     height: 45px;
+    width: 45px;
     text-align: center;
     line-height: 45px;
     transition: all .5s ease;
 }
 
-label #cancel {
+label #cancel{
     opacity: 0;
     visibility: hidden;
 }
@@ -95,11 +97,11 @@ label #cancel {
     margin: 100px 0;
     }
 
-    header, #btn, #cancel {
-        display none;
+    header,#btn,#cancel {
+        display: none;
     }
 
-    span {
+    span{
         position: absolute;
         margin-left: 23px;
         opacity: 0;
