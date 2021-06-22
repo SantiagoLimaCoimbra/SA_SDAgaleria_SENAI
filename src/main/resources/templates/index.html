@@ -10,50 +10,44 @@
     <!--CSS-->
     <link rel="stylesheet" th:href="@{/bootstrap-5.0.1/css/bootstrap.min.css}">
     <link rel="stylesheet" th:href="@{/fontawesome-5.15.3/css/all.css}">
-    <link rel="stylesheet" th:href="@{/css/estilo.css}">
+    <link rel="stylesheet" th:href="@{/css/estilo2.css}">
 
 </head>
-    <input type="checkbox" id="check">
-<label for="check">
-    <i class="fas fa-bars" id="btn"></i>
-    <i class="fas fa-times" id="cancel"></i>
-</label>
-<div class="sidebar">
-    <header> Menu</header>
-    <a href="#" class="active">
-        <i class="nav-item"></i>
-        <span> Home</span>
-    </a>
-    <a href="#">
-        <i class="nav-item"></i>
-        <span> Galeria</span>
-    </a>
-    <a href="#">
-        <i class="nav-item"></i>
-        <span> Pop Art</span>
-    </a>
-    <a href="#">
-        <i class="nav-item"></i>
-        <span> Arte Urbana</span>
-    </a>
-    <a href="#">
-        <i class="nav-item"></i>
-        <span> Cadastro</span>
-    </a>
-    <a href="#">
-        <i class="nav-item"></i>
-        <span> Sobre</span>
-    </a>
-</div>
 
 <body>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a th:href="@{/}">Home</a>
+        <a th:href="@{/cargo/list}">Galeria</a>
+        <a th:href="@{/cargo/list}">Pop Art</a>
+        <a th:href="@{/cargo/list}">Arte Urbana</a>
+        <a th:href="@{/cargo/list}">Cadastro</a>
+        <a th:href="@{/cargo/list}">Sobre</a>
+    </div>
 
-<!--JS-->
+    <div id="main">
+        <button class="openbtn" onclick="openNav()">☰</button>
+    </div>
+    <div id="texto">
+        <h2>SA Semana da Arte</h2>
+
+        <p>Trabalho da semana da arte</p>
+        <p>{mais textos a serem inseridos}</p>
+    </div>
+
+    <footer>
+        <ul>
+            <li><strong>Só Amigos Galeria</strong></li>
+            <li>Angelo - Eduardo - Lorenzo - Santiago</li>
+            <li>SESI - SENAI - CTAI</li>
+        </ul>
+    </footer>
+
+    <!--JS-->
     <script th:src="@{/js/jquery-3.6.0.min.js}"></script>
     <!--<script th:src="@{/js/popper.min.js}"></script>-->
     <script th:src="@{/js/scriptIndex.js}"></script>
     <script th:src="@{/bootstrap-5.0.1/js/bootstrap.min.js}"></script>
-    <!--<script th:src="https//kit.fontawesome.com/a076d05399.js"></script>-->
 
 </body>
 </html>
