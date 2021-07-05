@@ -100,3 +100,36 @@ ul{
 li{
     list-style-type: none;
 }
+
+li a {
+    color: white
+    text-decoration: none;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.row {
+    display: flex
+    justify-content: center;
+}
+
+.col {
+    width: 50%
+
+}
+
+@media screen and (max-width: 800px) {
+    .rodape{
+        width: 97%;
+    }
+    .row{
+        display: block;
+    }
+    .col{
+        width: 94%
+    }
+}
