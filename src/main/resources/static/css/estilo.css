@@ -63,8 +63,8 @@ a.active, a:hover {
 
 #texto{
     text-align: center;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 70px;
+    margin-right: 70px;
     font-family: "Lato", sans-serif;
 }
 
@@ -77,20 +77,6 @@ a.active, a:hover {
     /*text-align: center;*/
     max-width:300px;
     max-height:500px;
-}
-
-
-#obra3{
-    color: #f4ff1f;
-}
-#obra1{
-    color: #ff5608;
-}
-#obra2{
-    color: #f4ff1f;
-}
-#obra4{
-    color: #161200;
 }
 
 /* - - c a r r o s s e l - - */
@@ -122,7 +108,8 @@ li{
 }
 
 a {
-    color: #31DEC3;
+    color: white
+    text-decoration: none;
 }
 
 .rodape {
